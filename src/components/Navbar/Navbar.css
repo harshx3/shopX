@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    width: 7rem;
+    height: 4rem;
+    background: transparent;
+    user-select: none;
+}
+
+ul {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+}
+
+li {
+    color: rgba(255, 255, 255, 0.5);
+    list-style: none;
+    font-size: large;
+}
+
+li:hover {
+    color: whitesmoke;
+}
+
+.cartDiv {
+  display: flex;
+  align-items: center;
+  margin-right: 0.4rem;
+}
+
+.cartDiv p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: large;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.cartDiv p:hover {
+    color: whitesmoke;
+}
+

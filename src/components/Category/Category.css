@@ -1,0 +1,10 @@
+.title {
+    text-align: center;
+}
+
+.category {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
