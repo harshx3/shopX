@@ -1,5 +1,7 @@
 import React, { createContext, useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+import axios from "axios";
 
 
 
@@ -32,9 +34,7 @@ export const AuthProvider = ({children})=> {
         if(!name.trim() || !email.trim() || !password.trim()){
          alert("Please enter all ther details");
         }
-      
-        //  console.log(formData);
-
+         //  console.log(formData);
          localStorage.setItem('formData', JSON.stringify(formData));
     }
 

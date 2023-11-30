@@ -7,6 +7,7 @@ import Cart from './Pages/Cart/Cart';
 import Login from './Pages/Login/Login';
 import SignUp from './Pages/SignUp/SignUp';
 import { AuthProvider } from './components/Authenticator/Authenticator';
+import ProductCard from './Pages/ProductCard/ProductCard';
 
 function App() {
 
@@ -24,10 +25,11 @@ function App() {
 
     fetchData();
     
-  }, []); // Empty dependency array means this effect runs once after the initial render
-  console.log(products);
+  }, []); 
+  // Empty dependency array means this effect runs once after the initial render
+  // console.log(products);
 
-  
+  console.log('app.js data',products[0]);
 
 
   return (
@@ -39,6 +41,7 @@ function App() {
     <Route path='cart' element={<Cart />} />
     <Route path='login' element={<Login />} />
     <Route path='signup' element={<SignUp />} />
+    <Route path='product/:productID' element={<ProductCard data={products} />} />
     </Routes>
     </AuthProvider>
     </BrowserRouter>

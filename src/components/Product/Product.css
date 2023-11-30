@@ -14,8 +14,7 @@
   }
   
   .ratingCount {
-    display: flex;
-    gap: 0.7rem;
+    margin-bottom: 0.4rem;
   }
 
 .para {
@@ -35,4 +34,8 @@
 .addToCart:hover {
     color: whitesmoke;
     cursor: pointer;
+}
+
+.productLink {
+    text-decoration: none;
 }
