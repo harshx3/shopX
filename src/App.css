@@ -3,32 +3,11 @@
   padding: 0;
 }
 
-.para {
-  color: black;
-  text-align: center;
-}
-
 .products {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-bottom: 1.5rem;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
 
-.productDiv {
-  width: 10rem;
-  /* border: 2px solid; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0.4rem;
-}
-
-.productDiv:hover {
-  cursor: pointer;
-}
-
-.ratingCount {
-  display: flex;
-  gap: 0.4rem;
-}

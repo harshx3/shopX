@@ -18,19 +18,16 @@ img {
 
 ul {
   display: flex;
-  gap: 0.7rem;
+  gap: 1rem;
   align-items: center;
+  margin-right: 0.4rem;
 }
 
 li {
-    color: rgba(255, 255, 255, 0.5);
     list-style: none;
     font-size: large;
 }
 
-li:hover {
-    color: whitesmoke;
-}
 
 .cartDiv {
   display: flex;
@@ -45,6 +42,12 @@ li:hover {
 
 .link {
     text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 500;
+}
+
+.link:hover {
+    color: rgba(255, 255, 255, 1);
 }
 
 .cartDiv p:hover {
