@@ -8,6 +8,8 @@ import Login from './Pages/Login/Login';
 import SignUp from './Pages/SignUp/SignUp';
 import { AuthProvider } from './components/Authenticator/Authenticator';
 import ProductCard from './Pages/ProductCard/ProductCard';
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 
 function App() {
 
@@ -36,6 +38,7 @@ function App() {
     <>
     <BrowserRouter>
     <AuthProvider>
+    <Navbar />
     <Routes>
     <Route path='/' element={<Home data={products} />} />
     <Route path='cart' element={<Cart />} />
@@ -43,6 +46,7 @@ function App() {
     <Route path='signup' element={<SignUp />} />
     <Route path='product/:productID' element={<ProductCard data={products} />} />
     </Routes>
+    <Footer />
     </AuthProvider>
     </BrowserRouter>
     </>

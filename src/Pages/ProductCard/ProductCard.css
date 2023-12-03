@@ -1,8 +1,22 @@
 .selectedProduct{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 0.7rem;
+    gap: 3rem;
+    margin: 2rem;
+}
+
+.productDisplayDiv {
+    text-align: center;
+    padding: 0.4rem;
+    border-radius: 0.8rem;
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4), inset 5px 5px 20px rgba(255, 255, 255, 0.4);
+}
+
+.productDisplayDetails {
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    gap: 0.5rem;
 }
 
 .selectedProductImg {
@@ -10,8 +24,52 @@
     height: 20rem;
 }
 
-p {
+.selectedProductPara {
     color: black;
-    text-align: center;
     font-size: 1.5rem;
+}
+
+.description {
+    color: black;
+    text-align: justify;
+    font-size: 1.5rem;
+}
+
+.productDisplayCartBtn {
+    border: none;
+    width: 30%;
+    margin-top: 0.9rem;
+    padding: 0.6rem;
+    border-radius: 0.6rem;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 19%, rgba(0,212,255,1) 100%);
+    color: whitesmoke;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
+    z-index: +2;
+}
+
+.productDisplayCartBtn::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: left;
+    transition-timing-function: linear;
+    transform: scaleX(0);
+    width: 100%;
+    border-radius: 0.6rem;
+
+}
+
+.productDisplayCartBtn:hover::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #ffffff;
+    transform: scaleX(1);
 }

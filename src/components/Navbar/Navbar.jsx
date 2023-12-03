@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import './Navbar.css';
 import logo  from '../../assets/logo.jpeg';
 import { Link } from 'react-router-dom';
@@ -12,7 +11,7 @@ const Navbar = () => {
   return (
     <div className='navbar'>
     <div className='logoDiv'>
-    <img src={logo} />
+    <Link to='/'><img src={logo} alt=''/></Link>
     </div>
         
         <ul>
