@@ -6,6 +6,7 @@
 }
 
 .productDisplayDiv {
+    width: 20rem;
     text-align: center;
     padding: 0.4rem;
     border-radius: 0.8rem;
@@ -15,13 +16,13 @@
 .productDisplayDetails {
     display: flex;
     flex-direction: column;
-    max-width: 30%;
     gap: 0.5rem;
 }
 
 .selectedProductImg {
-    width: 20rem;
-    height: 20rem;
+    width: 15rem;
+    height: 15rem;
+    object-fit: contain;
 }
 
 .selectedProductPara {
@@ -33,6 +34,7 @@
     color: black;
     text-align: justify;
     font-size: 1.5rem;
+    width: 50vw;
 }
 
 .productDisplayCartBtn {

@@ -1,9 +1,5 @@
 import React, { createContext, useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useEffect } from "react";
-import axios from "axios";
-
-
 
 const AuthContext = createContext();
 
@@ -38,9 +34,13 @@ export const AuthProvider = ({children})=> {
          localStorage.setItem('formData', JSON.stringify(formData));
     }
 
+    const goBack = ()=> {
+       navigate(-1);
+    }
+
 
     return(
-        <AuthContext.Provider value={ {login, isLoggedIn, logout, signup} }>
+        <AuthContext.Provider value={ {login, isLoggedIn, logout, signup, goBack} }>
             {children}
         </AuthContext.Provider>
     );

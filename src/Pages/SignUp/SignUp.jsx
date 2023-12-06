@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, {  useState } from 'react';
 import './SignUp.css';
 import { useAuth } from '../../components/Authenticator/Authenticator';
 
@@ -10,7 +10,7 @@ const SignUp = () => {
         password: '',
     });
 
-    const {signup} = useAuth();
+    const {signup, goBack} = useAuth();
 
     const changeHandler = (e) => {
         setFormData({
@@ -33,6 +33,7 @@ const SignUp = () => {
     }
 
   return (
+    <>
     <div className='signUpForm'>
         <div className='signup-title'>
         <h2>Sign up</h2>
@@ -58,6 +59,8 @@ const SignUp = () => {
         </div>
         </div>
     </div>
+        <button onClick={goBack} className='backBtn'>Go Back</button>
+    </>
   )
 }
 

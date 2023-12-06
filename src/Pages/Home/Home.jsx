@@ -6,7 +6,7 @@ const Home = ({data}) => {
     
   return (
     <div>
-        <Category />
+   <Category to='category' />
         <Product productsData={data} />
     </div>
   )

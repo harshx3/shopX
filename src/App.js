@@ -10,6 +10,7 @@ import { AuthProvider } from './components/Authenticator/Authenticator';
 import ProductCard from './Pages/ProductCard/ProductCard';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
+import SelectedCat from './Pages/SelectedCategory/SelectedCat';
 
 function App() {
 
@@ -31,7 +32,7 @@ function App() {
   // Empty dependency array means this effect runs once after the initial render
   // console.log(products);
 
-  console.log('app.js data',products[0]);
+  // console.log('app.js data',products[0]);
 
 
   return (
@@ -45,6 +46,7 @@ function App() {
     <Route path='login' element={<Login />} />
     <Route path='signup' element={<SignUp />} />
     <Route path='product/:productID' element={<ProductCard data={products} />} />
+    <Route path='category/:categoryName/*' element={<SelectedCat data={products} />} />
     </Routes>
     <Footer />
     </AuthProvider>

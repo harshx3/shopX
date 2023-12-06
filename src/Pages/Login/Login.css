@@ -60,3 +60,22 @@
 .form-group button:hover {
     background-color: #2980b9;
 }
+
+.backBtn {
+    position: absolute;
+    margin: 0 auto;
+    border: none;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%);
+    padding: 0.5rem 0.7rem;
+    border-radius: 4px;
+    background-color: #3498db;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.backBtn:hover {
+    background-color: #2980b9;
+}

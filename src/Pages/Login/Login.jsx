@@ -7,7 +7,7 @@ const Login = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
-    const {login} = useAuth();
+    const {login, goBack} = useAuth();
 
    const loginHandler = (e)=>{
     e.preventDefault();
@@ -17,6 +17,7 @@ const Login = () => {
     
 
   return (
+    <>
     <div className="login-container">
         <div className="login-header">
             <h2>Login</h2>
@@ -35,6 +36,8 @@ const Login = () => {
             </div>
         </div>
     </div>
+        <button onClick={goBack} className='backBtn'>Go Back</button>
+        </>
   )
 }
 

@@ -21,30 +21,14 @@
     font-weight: bold;
     border-radius: 0.5rem;
     background-color: #3498db;
-    color: #ffffff;
+    color: rgba(255, 255, 255, 0.9);
     cursor: pointer;
     position: relative;
-    z-index: 2;
+    text-decoration: none;
 }
 
-.category-btn::before {
-    content: '';
-    position: absolute;
-    background-color: #000;
-    left: 0;
-    /* padding: 1rem; */
-    border-radius: 0.5rem;
-    top: 0;
-    z-index: -1;
-    
-    
-}
-
-.category-btn:hover::before {
-    position: absolute;
-    right: 0;
-    padding: 1rem;
+.category-btn:hover {
     color: #ffffff;
-    transform: scaleX(1);
 }
+
 
